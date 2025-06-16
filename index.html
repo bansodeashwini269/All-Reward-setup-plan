@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script> (function (w, d, s, u) {let j = d.createElement(s); j.async = true; j.src ="https://dev-assets.channelboost.com/scripts/embeddingwidget.js?uid=" +u; let f = d.getElementsByTagName(s)[0]; f.parentNode.insertBefore(j, f);})(window, document, "script", "cf6ac25f-fe41-46ae-b93c-e47982a793c1");</script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dummy Test Website</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #444;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 1rem;
+      text-decoration: none;
+    }
+    main {
+      padding: 2rem;
+    }
+    form label {
+      display: block;
+      margin: 1rem 0;
+    }
+    footer {
+      background-color: #eee;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+    table, th, td {
+      border: 1px solid #aaa;
+    }
+    th, td {
+      padding: 0.5rem;
+      text-align: left;
+    }
+    #formMessage {
+      margin-top: 1rem;
+      color: green;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Dummy Test Website</h1>
+    <nav>
+      <a href="#form">Form</a>
+      <a href="#table">Table</a>
+    </nav>
+  </header>
+
+  <main>
+<div id="58009d95-845b-6322-a60f-0197775ffb9f" ></div>
+    <section id="form">
+      <h2>Test Form</h2>
+      <form id="testForm">
+        <label>
+          Name:
+          <input type="text" name="name" required />
+        </label>
+        <label>
+          Email:
+          <input type="email" name="email" required />
+        </label>
+        <label>
+          Gender:
+          <select name="gender">
+            <option value="">Select</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+          </select>
+        </label>
+        <label>
+          Agree to Terms:
+          <input type="checkbox" name="terms" required />
+        </label>
+        <button type="submit">Submit</button>
+      </form>
+      <div id="formMessage"></div>
+    </section>
+
+    <section id="table">
+      <h2>User Data Table</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th><th>Name</th><th>Email</th><th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>1</td><td>Alice</td><td>alice@example.com</td><td>Active</td></tr>
+          <tr><td>2</td><td>Bob</td><td>bob@example.com</td><td>Inactive</td></tr>
+          <tr><td>3</td><td>Charlie</td><td>charlie@example.com</td><td>Active</td></tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Dummy Company</p>
+  </footer>
+
+  <script>
+    document.getElementById("testForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      document.getElementById("formMessage").textContent = "Form submitted successfully!";
+      this.reset();
+    });
+  </script>
+</body>
+</html>
